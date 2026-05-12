@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+  </body>
+  <script>
+    const sayDate = function (str) {
+      console.log(str, Date.now());
+    };
+    setInterval(sayDate, 1000, "Hello, World!");
+  </script>
+</html>

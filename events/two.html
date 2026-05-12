@@ -1,0 +1,37 @@
+<!DOCTYPE html> 
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <h1>Hello, World!</h1>
+  <button id="stop">Stop</button>
+</body>
+<script>
+
+// const h1 = document.querySelector('h1').innerHTML="Welcome to JavaScript";
+// setTimeout(function()  {
+//   console.log(h1);
+// }, 7000);
+
+// setTimeout(function () {
+//   console.log("Nikhil");
+  
+// }, 5000);
+
+  const name=function() {
+    console.log("nikhil");
+  }
+
+  const chnagetext = function (){
+    document.querySelector('h1').innerHTML="Welcome to JavaScript";
+  }// like pop-up after some time.
+
+  const time = setTimeout(chnagetext, 5000);
+
+  document.querySelector('#stop').addEventListener('click', function(){
+    clearTimeout(time);
+    console.log("Stop");
+  })
+  // clearTimeout(time);
+</script>
+</html>

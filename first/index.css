@@ -1,0 +1,25 @@
+body{
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+.button{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#red{
+    background-color: red;
+}
+#green{
+    background-color: green;
+}
+#blue{
+    background-color: blue;
+}
+#yellow{
+    background-color: yellow;
+}

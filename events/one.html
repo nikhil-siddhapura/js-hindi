@@ -1,0 +1,101 @@
+<html>
+  <head>
+    <title>html events</title>
+  </head>
+  <body>
+    <ul id="image">
+      <li>
+        <img
+          width="200px"
+          src="C:\Users\Jatin\Downloads\download.jpg"
+          alt="Evening"
+          id="evening"
+        />
+      </li>
+      <br />
+      <li>
+        <img
+          width="200px"
+          height="150px"
+          src="C:\Users\Jatin\Downloads\download (1).jpg"
+          alt="Parrot"
+          id="parrot"
+        />
+      </li>
+      <li>
+        <img
+          width="200px"
+          height="150px"
+          src="C:\Users\Jatin\Downloads\images.jpg"
+          alt="Elephant"
+          id="elephant"
+        />
+      </li>
+      <li>
+        <img
+          src="C:\Users\Jatin\Downloads\images (1).jpg"
+          alt=""
+          height="150px"
+          width="200px"
+          id="flower"
+        />
+      </li>
+      <li>
+        <a href="http://google.com" style="color: blue" id="google">Google</a>
+      </li>
+    </ul>
+  </body>
+  <script>
+    // document.getElementById("parrot").onclick = function () {
+    //   alert("parrot is a bird");
+    // };
+
+    //type, timestamp, defaultPrevented.
+    // target, toElement, srcElement, currentTarget
+    // clientX, clientY, screenX, screenY
+    // altKey, ctrlKey, shiftKey, KeyCode
+    // attachEvent is an old method and is not supported by all browsers, so it is recommended to use addEventListener instead.
+    // jquery is a popular JavaScript library that provides a simple and consistent API for handling events across different browsers. It abstracts away the differences in event handling between browsers and provides a unified way to attach event handlers to elements. With jQuery, you can use the .on() method to attach event handlers to elements, which works across all major browsers without the need for browser-specific code.
+
+    // document.getElementById("image").addEventListener(
+    //   "click",
+    //   function (e) {
+    //     // alert("parrot is a bird");
+    //     console.log("click inside the image");
+    //   },
+    //   false,
+    // );
+
+    // document.getElementById("parrot").addEventListener(
+    //   "click",
+    //   function (e) {
+    //     // alert("parrot is a bird");
+    //     console.log("parrot clicked");
+    //     e.stopPropagation();
+    //   },
+    //   false,
+    // );
+    // document.getElementById("google").addEventListener(
+    //   "click",
+    //   function (e) {
+    //     e.preventDefault();
+    //     // e.stopPropagation();
+    //     console.log("Google Clicked");
+    //   },
+    //   false,
+    // );
+
+    document.querySelector("#image").addEventListener(
+      "click",
+      function (e) {
+        console.log(e.target.tagName);
+        if (e.target.tagName === "IMG") {
+          console.log(e.target.id);
+          let removeIt = e.target.parentNode;
+          removeIt.remove();
+        }
+      },
+      false,
+    );
+  </script>
+</html>

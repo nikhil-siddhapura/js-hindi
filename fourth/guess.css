@@ -1,0 +1,44 @@
+body {
+  background-color: darkgray;
+}
+
+.container {
+  height: 550px;
+  width: 400px;
+  background-color: white;
+  margin-left: 800px;
+  margin-top: 80px;
+  border: 1px solid black;
+  border-radius: 20px;
+  /* padding-top: 20px; */
+  box-shadow: 0px 4px 10px 1px black;
+}
+label {
+  margin-top: 30px;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+  display: block;
+}
+input {
+  display: flex;
+  align-items: center;
+  margin: 20px auto;
+  height: 25px;
+  width: 150px;
+  font-size: 15px;
+}
+p {
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+h1 {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 30px;
+}
+#guesses {
+  margin-top: 30px;
+}

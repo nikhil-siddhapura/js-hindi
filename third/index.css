@@ -1,0 +1,33 @@
+body {
+  background-color: darkgray;
+  color: black;
+}
+.container {
+  height: 100px;
+  width: 380px;
+  background-color: white;
+  margin-left: 800px;
+  margin-top: 80px;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding-top: 20px;
+  box-shadow: 0px 4px 10px 1px black;
+}
+p {
+  font-size: 20px;
+  text-align: center;
+}
+
+.hh {
+  display: inline-block;
+  height: 20px;
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+  color: brown;
+}
+#clock {
+  background-color: lightgray;
+  margin-left: 140px;
+  padding: 2px;
+}
