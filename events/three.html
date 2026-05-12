@@ -1,24 +1,40 @@
-<html>
+<!doctype html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
   <body>
-    <h1>Hello, World!</h1>
+    <h1>JS CHAI OR CODE</h1>
     <button id="start">Start</button>
     <button id="stop">Stop</button>
-    <table>
-      <tr>
-        <td>
-          <h1>hii my name is nikhil</h1>
-          <h2>and whats your name?</h2>
-        </td>
-      </tr>
-    </table>
   </body>
   <script>
+    // setInterval(function () {
+    //   console.log("nikhi");
+    // });
+
+    // setInterval(function () {
+    //   console.log("nikhi", Date.now());
+    // }, 1000);
+
+    // const sayDate = function () {
+    //   console.log("nikhi", Date.now());
+    // };
+    // setInterval(sayDate, 1000);
+
     const sayDate = function (str) {
-      console.log(str, Date.now());
+      console.log("Hi,", str, Date.now());
     };
-    setInterval(sayDate, 1000, "Hello, World!");
+    // setInterval(sayDate, 1000, "nikhil");
+
+    const intervalId = setInterval(sayDate, 1000, "nikhi;");
+
+    clearInterval(intervalId);
+
+    // const sayDate = function (str) {
+    //   console.log(str.date.now());
+    // };
   </script>
 </html>
